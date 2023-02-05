@@ -1,0 +1,44 @@
+.table td {
+    vertical-align: middle;
+}
+
+.todo-edit-task input {
+    border-radius: 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 4px 16px;
+}
+
+.todo-edit-task .btn-warning,
+.todo-edit-task .btn-success {
+    border-radius: 0;
+}
+
+.todo-edit-task .btn-success:focus,
+.todo-edit-task .btn-warning:focus {
+    box-shadow: none;
+}
+
+.todo-edit-task .btn-warning {
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.todo-edit-task {
+    transition: all ease 0.6s;
+    position: relative;
+}
+
+.isEdit {
+    transform: translate(0);
+    opacity: 1;
+    z-index: 0;
+}
+
+.isNonEdit {
+    transform: translate(100%);
+    opacity: 0;
+    z-index: -1;
+}
